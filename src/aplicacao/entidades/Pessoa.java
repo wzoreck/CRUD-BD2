@@ -28,7 +28,6 @@ public class Pessoa {
 		System.out.println("cpf: " + this.cpf);
 		System.out.println("altura: " + this.altura);
 		System.out.println("peso: " + this.peso);
-		System.out.println();
 	}
 
 	public int getId() {

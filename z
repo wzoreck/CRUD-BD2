@@ -1,0 +1,53 @@
+[1mdiff --git a/src/aplicacao/bd/PessoaDAO.java b/src/aplicacao/bd/PessoaDAO.java[m
+[1mindex e9559d8..6cdb806 100644[m
+[1m--- a/src/aplicacao/bd/PessoaDAO.java[m
+[1m+++ b/src/aplicacao/bd/PessoaDAO.java[m
+[36m@@ -41,7 +41,6 @@[m [mpublic class PessoaDAO implements InterfaceDAO<Pessoa> {[m
+ 		} catch (SQLException e) {[m
+ 			System.err.println("Não foi possível atualizar os dados da pessoa no banco!");[m
+ 		}[m
+[31m-[m
+ 	}[m
+ [m
+ 	@Override[m
+[1mdiff --git a/src/aplicacao/bd/UtilBD.java b/src/aplicacao/bd/UtilBD.java[m
+[1mindex 86dd680..f523a9b 100644[m
+[1m--- a/src/aplicacao/bd/UtilBD.java[m
+[1m+++ b/src/aplicacao/bd/UtilBD.java[m
+[36m@@ -63,7 +63,6 @@[m [mpublic class UtilBD {[m
+ 		Connection bd = UtilBD.getConexao();[m
+ 		Statement stm = bd.createStatement();[m
+ 		stm.executeUpdate(query);[m
+[31m-		//System.out.println("Query executada: " + query);[m
+ 		stm.close();[m
+ 	}[m
+ }[m
+[1mdiff --git a/src/aplicacao/entidades/Pessoa.java b/src/aplicacao/entidades/Pessoa.java[m
+[1mindex 0597cd5..1437640 100644[m
+[1m--- a/src/aplicacao/entidades/Pessoa.java[m
+[1m+++ b/src/aplicacao/entidades/Pessoa.java[m
+[36m@@ -13,7 +13,7 @@[m [mpublic class Pessoa {[m
+ 		this.altura = altura;[m
+ 		this.peso = peso;[m
+ 	}[m
+[31m-	[m
+[32m+[m
+ 	public Pessoa(int id, String nome, String cpf, float altura, float peso) {[m
+ 		this.id = id;[m
+ 		this.nome = nome;[m
+[36m@@ -30,14 +30,10 @@[m [mpublic class Pessoa {[m
+ 		System.out.println("peso: " + this.peso);[m
+ 		System.out.println();[m
+ 	}[m
+[31m-	[m
+[32m+[m
+ 	public int getId() {[m
+ 		return id;[m
+ 	}[m
+[31m-	[m
+[31m-	public void setId(int id) {[m
+[31m-		this.id = id;[m
+[31m-	}[m
+ [m
+ 	public String getNome() {[m
+ 		return nome;[m
