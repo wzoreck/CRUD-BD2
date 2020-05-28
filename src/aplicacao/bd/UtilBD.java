@@ -63,7 +63,6 @@ public class UtilBD {
 		Connection bd = UtilBD.getConexao();
 		Statement stm = bd.createStatement();
 		stm.executeUpdate(query);
-		//System.out.println("Query executada: " + query);
 		stm.close();
 	}
 }

@@ -41,7 +41,6 @@ public class PessoaDAO implements InterfaceDAO<Pessoa> {
 		} catch (SQLException e) {
 			System.err.println("Não foi possível atualizar os dados da pessoa no banco!");
 		}
-
 	}
 
 	@Override

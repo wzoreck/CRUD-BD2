@@ -13,7 +13,7 @@ public class Pessoa {
 		this.altura = altura;
 		this.peso = peso;
 	}
-	
+
 	public Pessoa(int id, String nome, String cpf, float altura, float peso) {
 		this.id = id;
 		this.nome = nome;
@@ -30,13 +30,9 @@ public class Pessoa {
 		System.out.println("peso: " + this.peso);
 		System.out.println();
 	}
-	
+
 	public int getId() {
 		return id;
-	}
-	
-	public void setId(int id) {
-		this.id = id;
 	}
 
 	public String getNome() {
